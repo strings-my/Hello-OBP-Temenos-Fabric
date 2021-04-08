@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s94646671df64926bbeb33767138e529",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgLogo",
+        "btnLogin",
+        "lblLine2",
+        "lblLine",
+        "tbxUsername",
+        "tbxPassword"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enabled": false,
+    "enablescrolling": true,
+    "id": "flxLogin",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a32f82ade0ba473987c3fd64a071a0ef",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "orientation": 6,
+    "parent": "ZenithLogin",
+    "percent": true,
+    "pf": "userwidgetmodel",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

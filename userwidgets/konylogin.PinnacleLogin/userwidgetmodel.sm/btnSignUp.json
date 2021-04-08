@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "4.48%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa110118acc14cf494a51ab21bfe6b6e",
+    "_text_": "Don't have an account? Sign Up",
+    "_width_": {
+        "type": "string",
+        "value": "68.44%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.04%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "95.05%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s2a2618ce20d4a5a90c9eaca41e90ac7",
+    "id": "btnSignUp",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "hc75c8f95dfe4ef1a21441d7c3602736",
+    "name": "kony.ui.Button",
+    "parent": "PinnacleLogin",
+    "pf": "userwidgetmodel",
+    "showprogressindicator": false,
+    "wType": "Button",
+    "zindex": 6
+}

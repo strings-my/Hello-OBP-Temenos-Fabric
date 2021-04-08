@@ -1,0 +1,187 @@
+{
+	"AS_Form_fd7fd7e99b064c288e8088961bea145d": {
+		"id": "AS_Form_fd7fd7e99b064c288e8088961bea145d",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"contextObj": {
+			"type": "forms",
+			"platform": "",
+			"KUID": "ef7a4f53a3014f749300adc6a656a230",
+			"name": "frmAccount"
+		},
+		"language": "js",
+		"actions": [
+			{
+				"id": "LOADING_INDICATOR_if830359e0ad4d09a63eb462bb019cd1",
+				"selectedOption": "show",
+				"parentId": null,
+				"type": "LOADING_INDICATOR",
+				"callbackType": null,
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			},
+			{
+				"id": "INVOKE_SERVICE_b41a02f29d1a4afda7a3aeb2b5bd234e",
+				"type": "INVOKE_ASYNC_SERVICE",
+				"inputparams": null,
+				"httpheaders": [
+					{
+						"name": "",
+						"value": ""
+					},
+					{
+						"name": "",
+						"value": ""
+					},
+					{
+						"name": "",
+						"value": ""
+					}
+				],
+				"httpconfigs": null,
+				"isasynchronous": true,
+				"mappings": {
+					"ME_Mapping_cc36fd2fca174c318cbfa6527d51b876": {
+						"channel": "mobile",
+						"id": "ME_Mapping_cc36fd2fca174c318cbfa6527d51b876",
+						"type": "MAPPING",
+						"callbackType": null,
+						"rectified": true,
+						"source": {
+							"forkedPlatform": "all"
+						},
+						"target": {
+							"type": "Services",
+							"propertyName": "bank_id",
+							"dataType": "string",
+							"expression": "\"THE_DEFAULT_BANK_ID\"",
+							"forkedPlatform": "all",
+							"serviceconfig": {
+								"servicename": "konyMpOpenBanking",
+								"serviceid": "d5994dc4-b755-4db3-a465-b22646a426db",
+								"type": "integration",
+								"operationname": "getBalance",
+								"operationid": "62136"
+							}
+						}
+					}
+				},
+				"mappingsOrder": [
+					"ME_Mapping_cc36fd2fca174c318cbfa6527d51b876"
+				],
+				"serviceconfig": {
+					"servicename": "konyMpOpenBanking",
+					"serviceid": "d5994dc4-b755-4db3-a465-b22646a426db",
+					"type": "integration",
+					"operationname": "getBalance",
+					"operationid": "62136"
+				},
+				"parentId": null,
+				"callbackType": null,
+				"enableMappingEditor": true
+			},
+			{
+				"id": "ADD_MAPPING_ad70fc2057a04ae1854b9ccf3d2d1f9a",
+				"type": "ADD_MAPPING",
+				"mappings": {
+					"ME_Mapping_h84405a64c6847ff98db7b8e9c2d02b5": {
+						"channel": "mobile",
+						"id": "ME_Mapping_h84405a64c6847ff98db7b8e9c2d02b5",
+						"type": "MAPPING",
+						"callbackType": null,
+						"rectified": true,
+						"source": {
+							"type": "Services",
+							"propertyName": "accounts",
+							"dataType": "collection",
+							"forkedPlatform": "all",
+							"serviceconfig": {
+								"servicename": "konyMpOpenBanking",
+								"serviceid": "d5994dc4-b755-4db3-a465-b22646a426db",
+								"type": "integration",
+								"operationname": "getBalance",
+								"operationid": "62136"
+							}
+						},
+						"target": {
+							"type": "Forms",
+							"propertyName": "rowData",
+							"widgetId": "segAccount",
+							"widgetPath": "this.view.segAccount",
+							"widgetType": "Segment",
+							"dataType": "collection",
+							"itemId": "frmAccount",
+							"collectionId": "masterdata",
+							"widgetKUID": "a5211c7a2ee44393b504d8cbb6f39f33",
+							"itemKUID": "ef7a4f53a3014f749300adc6a656a230",
+							"forkedPlatform": "all"
+						}
+					},
+					"ME_Mapping_ecdf5ac9364d41088a5622ba4fa9ae36": {
+						"channel": "mobile",
+						"id": "ME_Mapping_ecdf5ac9364d41088a5622ba4fa9ae36",
+						"type": "MAPPING",
+						"callbackType": null,
+						"rectified": true,
+						"source": {
+							"type": "Services",
+							"propertyName": "account_id",
+							"dataType": "string",
+							"collectionId": "accounts",
+							"propertyPath": "[\"accounts\"][0][\"account_id\"]",
+							"forkedPlatform": "all",
+							"serviceconfig": {
+								"servicename": "konyMpOpenBanking",
+								"serviceid": "d5994dc4-b755-4db3-a465-b22646a426db",
+								"type": "integration",
+								"operationname": "getBalance",
+								"operationid": "62136"
+							}
+						},
+						"target": {
+							"type": "Forms",
+							"propertyName": "text",
+							"widgetId": "lblAccName",
+							"widgetPath": "this.view.lblAccName",
+							"widgetType": "Label",
+							"dataType": "string",
+							"templateType": "rowTemplate",
+							"itemId": "frmAccount",
+							"parentMappingId": "ME_Mapping_h84405a64c6847ff98db7b8e9c2d02b5",
+							"segmentId": "segAccount",
+							"segmentKUID": "a5211c7a2ee44393b504d8cbb6f39f33",
+							"widgetKUID": "d4921c4c0b5e48b880b82be92efe300e",
+							"itemKUID": "ef7a4f53a3014f749300adc6a656a230",
+							"forkedPlatform": "all"
+						}
+					}
+				},
+				"mappingsOrder": [
+					"ME_Mapping_h84405a64c6847ff98db7b8e9c2d02b5",
+					"ME_Mapping_ecdf5ac9364d41088a5622ba4fa9ae36"
+				],
+				"parentId": "INVOKE_SERVICE_b41a02f29d1a4afda7a3aeb2b5bd234e",
+				"callbackType": "Callback",
+				"enableMappingEditor": true
+			},
+			{
+				"id": "LOADING_INDICATOR_e55b710569aa400398d870c7beb626c7",
+				"selectedOption": "dismiss",
+				"parentId": "INVOKE_SERVICE_b41a02f29d1a4afda7a3aeb2b5bd234e",
+				"type": "LOADING_INDICATOR",
+				"callbackType": "Callback",
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			}
+		]
+	}
+}

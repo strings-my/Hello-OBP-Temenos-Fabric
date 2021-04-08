@@ -1,0 +1,102 @@
+{
+	"AS_Button_d6f424ab0db548f38b2cd2453a76907a": {
+		"id": "AS_Button_d6f424ab0db548f38b2cd2453a76907a",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"contextObj": {
+			"type": "forms",
+			"platform": null,
+			"KUID": "d7d0e61c251d46afb183de60b804974f",
+			"name": "frmLogin"
+		},
+		"language": "js",
+		"actions": [
+			{
+				"id": "LOADING_INDICATOR_c03e4cdc22ad429cb3b99c6ed46cdfc4",
+				"selectedOption": "show",
+				"type": "LOADING_INDICATOR",
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			},
+			{
+				"id": "INVOKE_IDENTITY_SERVICE_jf87052dc3144d2a8cc1537c3262bf52",
+				"type": "INVOKE_IDENTITY_SERVICE",
+				"mappings": {},
+				"mappingsOrder": [],
+				"serviceconfig": {
+					"servicename": "auth",
+					"type": "identity",
+					"operationname": "login",
+					"serviceid": "c0038e90-9bba-4e15-bfa5-2125c1675396",
+					"login_type": "custom",
+					"isDeepLinkRequired": false
+				},
+				"enableMappingEditor": true,
+				"useDeviceBrowser": false,
+				"isDeepLinkRequired": false
+			},
+			{
+				"id": "LOADING_INDICATOR_a1da39752ee24811b07f82313fd58553",
+				"selectedOption": "dismiss",
+				"parentId": "INVOKE_IDENTITY_SERVICE_jf87052dc3144d2a8cc1537c3262bf52",
+				"type": "LOADING_INDICATOR",
+				"callbackType": "Success",
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			},
+			{
+				"id": "NAVIGATE_TO_FORM__if255ab87ef048eb850d927a874ca5e7",
+				"type": "NAVIGATE_TO_FORM",
+				"formId": "frmAccount",
+				"formKUID": "ef7a4f53a3014f749300adc6a656a230",
+				"mappings": {},
+				"mappingsOrder": [],
+				"parentId": "INVOKE_IDENTITY_SERVICE_jf87052dc3144d2a8cc1537c3262bf52",
+				"callbackType": "Success",
+				"enableMappingEditor": true,
+				"package": "",
+				"isCustomInput": false
+			},
+			{
+				"id": "LOADING_INDICATOR_dba84df16a114c6eb112bfe9d83d3262",
+				"selectedOption": "dismiss",
+				"parentId": "INVOKE_IDENTITY_SERVICE_jf87052dc3144d2a8cc1537c3262bf52",
+				"type": "LOADING_INDICATOR",
+				"callbackType": "Failure",
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			},
+			{
+				"id": "SHOW_ALERT_e43af29236ee4c769adfcb004472dfc8",
+				"type": "SHOW_ALERT",
+				"alertType": "constants.ALERT_TYPE_INFO",
+				"alertTitle": null,
+				"yesLabel": null,
+				"noLabel": null,
+				"alertIcon": null,
+				"alertMessage": "Login failed. Please try again.",
+				"messageType": "constant",
+				"alertHandler": null,
+				"parentId": "INVOKE_IDENTITY_SERVICE_jf87052dc3144d2a8cc1537c3262bf52",
+				"callbackType": "Failure",
+				"alertTitlei18n": null,
+				"yesLabeli18n": null,
+				"noLabeli18n": null,
+				"alertMessagei18n": null,
+				"iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+				"disabled": null
+			}
+		]
+	}
+}

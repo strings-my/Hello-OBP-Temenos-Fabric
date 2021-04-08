@@ -1,0 +1,111 @@
+{
+	"AS_Form_e113639f3bfa48c7b7953600315c622f": {
+		"id": "AS_Form_e113639f3bfa48c7b7953600315c622f",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"contextObj": {
+			"type": "forms",
+			"platform": "",
+			"KUID": "g1d0b6a0b6714bb4b2df9566cb9771ea",
+			"name": "frmTransaction"
+		},
+		"language": "js",
+		"actions": [
+			{
+				"id": "LOADING_INDICATOR_hb2b62ab45804f7cb83513e897c72422",
+				"selectedOption": "show",
+				"type": "LOADING_INDICATOR",
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			},
+			{
+				"id": "INVOKE_ASYNC_SERVICE_h916a8fbab87458d9f6f4f9888eb2eac",
+				"type": "INVOKE_ASYNC_SERVICE",
+				"inputparams": null,
+				"httpheaders": null,
+				"httpconfigs": null,
+				"isasynchronous": true,
+				"mappings": {},
+				"mappingsOrder": [],
+				"serviceconfig": {
+					"servicename": "konyMpOpenBanking",
+					"type": "integration",
+					"operationname": "getTransactionsForAccount",
+					"serviceid": "aeb213ea-cbf4-436e-b3d2-46c6ff43c274",
+					"operationid": "62807"
+				},
+				"enableMappingEditor": true
+			},
+			{
+				"id": "LOADING_INDICATOR_b51c4fb6aba94b71bb5c8d2d2be1e7b0",
+				"selectedOption": "dismiss",
+				"parentId": "INVOKE_ASYNC_SERVICE_h916a8fbab87458d9f6f4f9888eb2eac",
+				"type": "LOADING_INDICATOR",
+				"callbackType": "Callback",
+				"skin": "none",
+				"position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+				"isBlocked": "true",
+				"showProgressIndicator": "true"
+			},
+			{
+				"id": "_IF_CONDITION_hddc412740cb4ec1bdbb985a6cd2c1a4",
+				"type": "IF_CONDITION",
+				"conditions": [
+					{
+						"leftValue": "getTransactionsForAccount.opstatus",
+						"rightValue": "0",
+						"leftValueType": "value",
+						"rightValueType": "value",
+						"operator": "==="
+					}
+				],
+				"parentId": "INVOKE_ASYNC_SERVICE_h916a8fbab87458d9f6f4f9888eb2eac",
+				"callbackType": "Callback",
+				"criteria": "all"
+			},
+			{
+				"id": "_ELSE_CONDITION_e1ca8e6dbc074876a4c8baa1d211776b",
+				"type": "ELSE_CONDITION",
+				"conditions": [],
+				"parentId": "INVOKE_ASYNC_SERVICE_h916a8fbab87458d9f6f4f9888eb2eac",
+				"callbackType": "Callback",
+				"criteria": "all"
+			},
+			{
+				"id": "SHOW_ALERT_c04ed0014334437ba25f40b068dd5315",
+				"type": "SHOW_ALERT",
+				"alertType": "constants.ALERT_TYPE_INFO",
+				"alertTitle": null,
+				"yesLabel": null,
+				"noLabel": null,
+				"alertIcon": null,
+				"alertMessage": "Data fetch failed! Please try again later.",
+				"messageType": "constant",
+				"alertHandler": null,
+				"parentId": "_ELSE_CONDITION_e1ca8e6dbc074876a4c8baa1d211776b",
+				"alertTitlei18n": null,
+				"yesLabeli18n": null,
+				"noLabeli18n": null,
+				"alertMessagei18n": null,
+				"iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+				"disabled": null
+			},
+			{
+				"id": "ADD_MAPPING_da5aefaa3fc7421b81b9dd2fa6602798",
+				"type": "ADD_MAPPING",
+				"mappings": {},
+				"mappingsOrder": [],
+				"parentId": "_IF_CONDITION_hddc412740cb4ec1bdbb985a6cd2c1a4",
+				"callbackType": null,
+				"enableMappingEditor": true
+			}
+		]
+	}
+}

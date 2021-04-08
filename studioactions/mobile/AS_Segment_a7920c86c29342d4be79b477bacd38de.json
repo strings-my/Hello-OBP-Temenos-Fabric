@@ -1,0 +1,104 @@
+{
+	"AS_Segment_a7920c86c29342d4be79b477bacd38de": {
+		"id": "AS_Segment_a7920c86c29342d4be79b477bacd38de",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			},
+			{
+				"datatype": "number",
+				"name": "sectionNumber"
+			},
+			{
+				"datatype": "number",
+				"name": "rowNumber"
+			}
+		],
+		"contextObj": {
+			"type": "forms",
+			"platform": "",
+			"KUID": "ef7a4f53a3014f749300adc6a656a230",
+			"name": "frmAccount"
+		},
+		"language": "js",
+		"actions": [
+			{
+				"id": "NAVIGATE_TO_FORM__fc860cc74f2d4f9daabe5b067e6d3b1d",
+				"type": "NAVIGATE_TO_FORM",
+				"formId": "frmTransaction",
+				"formKUID": "g1d0b6a0b6714bb4b2df9566cb9771ea",
+				"mappings": {
+					"ME_Mapping_hb339563ef434fdb81c9ee2004f84a13": {
+						"channel": "mobile",
+						"id": "ME_Mapping_hb339563ef434fdb81c9ee2004f84a13",
+						"type": "MAPPING",
+						"callbackType": null,
+						"rectified": true,
+						"source": {
+							"type": "Forms",
+							"propertyName": "accNumber",
+							"propertyKey": "segAccount_accNumber",
+							"widgetId": "segAccount",
+							"widgetPath": "this.view.segAccount",
+							"widgetType": "Segment",
+							"dataType": "string",
+							"itemId": "frmAccount",
+							"collectionId": "selectedRowItems",
+							"widgetKUID": "a5211c7a2ee44393b504d8cbb6f39f33",
+							"itemKUID": "ef7a4f53a3014f749300adc6a656a230",
+							"forkedPlatform": "all",
+							"segmentChildInfo": {
+								"kuid": "a3a4c547c62045afaedab7ad8163e03a",
+								"widgetType": "Label",
+								"widgetPath": "this.view.accNumber"
+							}
+						},
+						"target": {
+							"forkedPlatform": "all"
+						}
+					},
+					"ME_Mapping_fc089753b86c4e3e935e5f6e7c4d6a27": {
+						"channel": "mobile",
+						"id": "ME_Mapping_fc089753b86c4e3e935e5f6e7c4d6a27",
+						"type": "MAPPING",
+						"callbackType": null,
+						"rectified": true,
+						"source": {
+							"type": "Forms",
+							"propertyName": "lblAccName",
+							"propertyKey": "segAccount_lblAccName",
+							"widgetId": "segAccount",
+							"widgetPath": "this.view.segAccount",
+							"widgetType": "Segment",
+							"dataType": "string",
+							"itemId": "frmAccount",
+							"collectionId": "selectedRowItems",
+							"widgetKUID": "a5211c7a2ee44393b504d8cbb6f39f33",
+							"itemKUID": "ef7a4f53a3014f749300adc6a656a230",
+							"forkedPlatform": "all",
+							"segmentChildInfo": {
+								"kuid": "d4921c4c0b5e48b880b82be92efe300e",
+								"widgetType": "Label",
+								"widgetPath": "this.view.lblAccName"
+							}
+						},
+						"target": {
+							"forkedPlatform": "all"
+						}
+					}
+				},
+				"mappingsOrder": [
+					"ME_Mapping_hb339563ef434fdb81c9ee2004f84a13",
+					"ME_Mapping_fc089753b86c4e3e935e5f6e7c4d6a27"
+				],
+				"enableMappingEditor": true,
+				"package": "",
+				"enableNavigationObj": true,
+				"navigationObj": "{\n    \"segAccount_accNumber\": kony.visualizer.getPropertyValue(self.view.segAccount.selectedRowItems[0][\"accNumber\"], \"text\"),\n    \"segAccount_lblAccName\": kony.visualizer.getPropertyValue(self.view.segAccount.selectedRowItems[0][\"lblAccName\"], \"text\"),\n    \"_meta_\": {\n        \"eventName\": \"onRowClick\",\n        \"widgetId\": \"segAccount\"\n    }\n}",
+				"isCustomInput": false
+			}
+		]
+	}
+}

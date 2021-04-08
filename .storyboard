@@ -1,0 +1,131 @@
+{
+    "models": {
+        "mobile": {
+            "class": "GraphLinksModel",
+            "linkDataArray": [
+                {
+                    "actionId": "NAVIGATE_TO_FORM__hc1f89037c8347869f28f31a45e7ce51",
+                    "actionSequenceId": "AS_Button_jca15c4037db4f0d914a447a7f1916ee",
+                    "beautifiedPath": "frmAccount > menuMain > menuButtonLogout > onClick",
+                    "evt": "ide_onClick",
+                    "from": "ef7a4f53a3014f749300adc6a656a230",
+                    "isPSP": false,
+                    "points": [
+                        331,
+                        242.97859700520837,
+                        313,
+                        242.97859700520837,
+                        313,
+                        242.97859700520831,
+                        313,
+                        242.97859700520831,
+                        187.6,
+                        242.97859700520831,
+                        177.6,
+                        242.97859700520831
+                    ],
+                    "to": "d7d0e61c251d46afb183de60b804974f",
+                    "widgetKUID": "g2c6783021094bcbb97b9060637ec0d5"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__fc860cc74f2d4f9daabe5b067e6d3b1d",
+                    "actionSequenceId": "AS_Segment_a7920c86c29342d4be79b477bacd38de",
+                    "beautifiedPath": "frmAccount > segAccount > onRowClick",
+                    "evt": "ide_onRowClick",
+                    "from": "ef7a4f53a3014f749300adc6a656a230",
+                    "isPSP": false,
+                    "points": [
+                        500.6,
+                        133.9119303385417,
+                        518.6,
+                        133.9119303385417,
+                        518.6,
+                        133.9119303385417,
+                        518.6,
+                        133.9119303385417,
+                        623,
+                        133.9119303385417,
+                        633,
+                        133.9119303385417
+                    ],
+                    "to": "g1d0b6a0b6714bb4b2df9566cb9771ea",
+                    "widgetKUID": "a5211c7a2ee44393b504d8cbb6f39f33"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__if255ab87ef048eb850d927a874ca5e7",
+                    "actionSequenceId": "AS_Button_d6f424ab0db548f38b2cd2453a76907a",
+                    "beautifiedPath": "frmLogin > btnSignin > onClick",
+                    "evt": "ide_onClick",
+                    "from": "d7d0e61c251d46afb183de60b804974f",
+                    "isPSP": false,
+                    "points": [
+                        177.6,
+                        133.91193033854165,
+                        195.6,
+                        133.91193033854165,
+                        243.8,
+                        133.91193033854165,
+                        243.8,
+                        133.9119303385417,
+                        313,
+                        133.9119303385417,
+                        331,
+                        133.9119303385417
+                    ],
+                    "to": "ef7a4f53a3014f749300adc6a656a230",
+                    "widgetKUID": "gd522108670e43cd8023106f805e3db7"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__f0d9448206d2402c96ce4714773f0195",
+                    "actionSequenceId": "AS_Button_d81e0b95122f4a26bc34bb5e33f7dc27",
+                    "beautifiedPath": "frmTransaction > btnBack > onClick",
+                    "evt": "ide_onClick",
+                    "from": "g1d0b6a0b6714bb4b2df9566cb9771ea",
+                    "isPSP": false,
+                    "points": [
+                        633,
+                        242.97859700520837,
+                        623,
+                        242.97859700520837,
+                        560.3,
+                        242.97859700520837,
+                        560.3,
+                        242.97859700520837,
+                        518.6,
+                        242.97859700520837,
+                        500.6,
+                        242.97859700520837
+                    ],
+                    "to": "ef7a4f53a3014f749300adc6a656a230",
+                    "widgetKUID": "c27cf2b73b32439d8800ade90863aaa2"
+                }
+            ],
+            "nodeDataArray": [
+                {
+                    "formKUID": "ef7a4f53a3014f749300adc6a656a230",
+                    "formName": "frmAccount",
+                    "isStartupForm": false,
+                    "key": "ef7a4f53a3014f749300adc6a656a230",
+                    "loc": "331 24.84526367187503",
+                    "thumbnailURL": "/assets/OpenBanking/forms/mobile/frmAccount.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "d7d0e61c251d46afb183de60b804974f",
+                    "formName": "frmLogin",
+                    "isStartupForm": true,
+                    "key": "d7d0e61c251d46afb183de60b804974f",
+                    "loc": "8 24.845263671875003",
+                    "thumbnailURL": "/assets/OpenBanking/forms/mobile/frmLogin.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "g1d0b6a0b6714bb4b2df9566cb9771ea",
+                    "formName": "frmTransaction",
+                    "isStartupForm": false,
+                    "key": "g1d0b6a0b6714bb4b2df9566cb9771ea",
+                    "loc": "633 24.84526367187503",
+                    "thumbnailURL": "/assets/OpenBanking/forms/mobile/frmTransaction.sm/.thumbs/default.jpeg"
+                }
+            ]
+        }
+    }
+}

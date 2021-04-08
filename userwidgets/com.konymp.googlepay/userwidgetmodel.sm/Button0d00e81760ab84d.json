@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sed19cfd3f534b77acabba437e0fdf10",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s0ec9a327e1543b88e46f6e924fd6f8d",
+    "id": "Button0d00e81760ab84d",
+    "ide_onClick": "AS_Button_b4c8313e39724577a2f2f59eedb4a731",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f56c262d6c9b4916a79c9dbd45f4aa06",
+    "name": "kony.ui.Button",
+    "parent": "googlepay",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

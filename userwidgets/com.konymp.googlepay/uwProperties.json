@@ -1,0 +1,396 @@
+{
+    "classname": "googlepay",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j359d48e953b4885a098707730d8d625",
+                    "paramList": [
+                        {
+                            "name": "params"
+                        }
+                    ],
+                    "propertyKey": "startPayment",
+                    "pw": {
+                        "displayName": "startPayment",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b6acee5befac48e8a0821d058ab52d39",
+                    "paramList": [
+                        {
+                            "name": "paymentData"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "handlePaymentSuccess",
+                    "pw": {
+                        "displayName": "handlePaymentSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d2355e9d67384c798612e7e7e3f29273",
+                    "paramList": [
+                        {
+                            "name": "status"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "handlePaymentFailure",
+                    "pw": {
+                        "displayName": "handlePaymentFailure",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Gateway Information",
+                "Google Pay Logo"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "example",
+                    "group": "Gateway Information",
+                    "kuid": "b43ea0bb7be1449b96aa58a528de6379",
+                    "originalPropertyKey": "gateway",
+                    "propertyIndex": 1,
+                    "propertyKey": "gateway",
+                    "pw": {
+                        "displayName": "Gateway",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ENVIRONMENT_TEST",
+                    "group": "General",
+                    "kuid": "gc8fc63b91624a43b2f2fae08621ff68",
+                    "originalPropertyKey": "paymentsEnvironment",
+                    "propertyIndex": 1,
+                    "propertyKey": "paymentsEnvironment",
+                    "pw": {
+                        "displayName": "Payments Environment",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "list selector",
+                    "value": [
+                        "ENVIRONMENT_TEST",
+                        "ENVIRONMENT_PRODUCTION"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "INR",
+                    "group": "General",
+                    "kuid": "fc6517c1ab1f49938e9144fafdd2bb9c",
+                    "originalPropertyKey": "currencyCode",
+                    "propertyIndex": 2,
+                    "propertyKey": "currencyCode",
+                    "pw": {
+                        "displayName": "ISO 4217 Currency Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "Key",
+                                "columnHeaderType": "text",
+                                "columnID": "key",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "b2fbca40d3c4475db3562a0b75266fcc"
+                            },
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "value",
+                                "columnHeaderType": "text",
+                                "columnID": "value",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "e02207d0b9da480f86eefeffd3d7e4c3"
+                            }
+                        ]
+                    },
+                    "group": "Gateway Information",
+                    "kuid": "h92d80d4f3da445a83ea01b68015f491",
+                    "originalPropertyKey": "gatewayParameters",
+                    "propertyIndex": 2,
+                    "propertyKey": "gatewayParameters",
+                    "pw": {
+                        "displayName": "Gateway Parameters",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "data grid",
+                    "value": 2
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e2ad7e62f78c4cfe981978ed63f13514",
+                    "originalPropertyKey": "totalPrice",
+                    "propertyIndex": 3,
+                    "propertyKey": "totalPrice",
+                    "pw": {
+                        "displayName": "Total Price",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "networks",
+                                "columnHeaderType": "text",
+                                "columnID": "networks",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "i9145200500d4890b5ed888a96d1ee57"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "a94a435818c547eaa7c9dc572b734660",
+                    "originalPropertyKey": "supportedNetworks",
+                    "propertyIndex": 4,
+                    "propertyKey": "supportedNetworks",
+                    "pw": {
+                        "displayName": "Supported Networks",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "data grid",
+                    "value": 1
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "methods",
+                                "columnHeaderType": "text",
+                                "columnID": "methods",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "c092e54e1a0b42d8af9bb3b60908b0ed"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "i96d57b8a1ca49bbb3b67092af1d7d2f",
+                    "originalPropertyKey": "supportedMethods",
+                    "propertyIndex": 5,
+                    "propertyKey": "supportedMethods",
+                    "pw": {
+                        "displayName": "Supported Methods",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "data grid",
+                    "value": 1
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "ISO 3166-1 alpha-2 country codes",
+                                "columnHeaderType": "text",
+                                "columnID": "countryCode",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "f9a1cdb2945c47b59910f1ba9bccec75"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "ebf7df56bf0a4a9289082a44df804950",
+                    "originalPropertyKey": "shippingCountries",
+                    "propertyIndex": 6,
+                    "propertyKey": "shippingCountries",
+                    "pw": {
+                        "displayName": "Shipping Supported Countries",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "data grid",
+                    "value": 1
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "ef39ed1fcb2740489e62ba5f94e22e6c",
+                    "originalPropertyKey": "allowPrepaidCards",
+                    "propertyIndex": 7,
+                    "propertyKey": "allowPrepaidCards",
+                    "pw": {
+                        "displayName": "Allow Prepaid Cards",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "a928bcb02ddd42c6b7aae137cfa7520a",
+                    "originalPropertyKey": "isBillingAddressRequired",
+                    "propertyIndex": 8,
+                    "propertyKey": "isBillingAddressRequired",
+                    "pw": {
+                        "displayName": "Billing Address Required",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "c40e7a9e705f4a6a94cee4483376fde7",
+                    "originalPropertyKey": "isPhoneNumberRequired",
+                    "propertyIndex": 9,
+                    "propertyKey": "isPhoneNumberRequired",
+                    "pw": {
+                        "displayName": "Phone Number Required",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "b3a2f76a556b4205b4baa54c18beb6e4",
+                    "originalPropertyKey": "isEmailRequired",
+                    "propertyIndex": 10,
+                    "propertyKey": "isEmailRequired",
+                    "pw": {
+                        "displayName": "Email Required",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b3cd5dad1fdf495bafec463d83fc985c",
+                    "type": "boolean",
+                    "value": "true/false"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "Google Pay Logo",
+                    "kuid": "af90abf16ffb4a41aa8d43218585fbb8",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 1,
+                    "propertyKey": "src",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Image",
+                        "srcWidget": "Image0d3d69ec4aa5a41",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "j7674c4f74ad4d1d81c7e7835285031b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Google Pay Logo",
+                    "kuid": "eea5d70393f04fcb82d61d7f9f54b9ca",
+                    "originalPropertyKey": "imageScaleMode",
+                    "propertyIndex": 2,
+                    "propertyKey": "imageScaleMode",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Image Scale Mode",
+                        "srcWidget": "Image0d3d69ec4aa5a41",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "j7674c4f74ad4d1d81c7e7835285031b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konymp",
+    "version": "1.0.0"
+}

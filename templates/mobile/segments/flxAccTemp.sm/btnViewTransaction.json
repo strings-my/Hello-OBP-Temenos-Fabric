@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6496f9f092b4e2d8b85e1c4e4545713",
+    "_text_": "View Transactions",
+    "_top_": {
+        "type": "string",
+        "value": "73dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sc609c4aaec64ed3b1b6b84fd20d34d6",
+    "id": "btnViewTransaction",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "iebe53f9638f4d0581b3907f4a5fa471",
+    "name": "kony.ui.Button",
+    "parent": "flxBlnce",
+    "pf": "flxAccTemp",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,32 @@
+{
+	"AS_Button_h9e6cc6f918e492f976aa7100e9cb129": {
+		"id": "AS_Button_h9e6cc6f918e492f976aa7100e9cb129",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"contextObj": {
+			"name": "frmAccount",
+			"type": "forms",
+			"platform": "",
+			"KUID": "ef7a4f53a3014f749300adc6a656a230"
+		},
+		"language": "js",
+		"actions": [
+			{
+				"id": "NAVIGATE_TO_FORM__b1315b41b1bf4abba19f9bb8eb4675f9",
+				"type": "NAVIGATE_TO_FORM",
+				"formId": "frmGooglePay",
+				"formKUID": "cc8a064da24e442f9403d6dfbeed9dfa",
+				"mappings": {},
+				"mappingsOrder": [],
+				"enableMappingEditor": true,
+				"package": "",
+				"isCustomInput": false
+			}
+		]
+	}
+}

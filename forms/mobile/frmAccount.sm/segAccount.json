@@ -1,0 +1,371 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_data_": [
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        },
+        {
+            "accNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "btnViewTransaction": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Transactions"
+            },
+            "lblAccName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblAccType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "S"
+            },
+            "lblAvailableblnc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available Balance"
+            },
+            "lblBlnce": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 350"
+            }
+        }
+    ],
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "hb8f985dcf8840a2987cc8cf3a4ce0f9",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAccount",
+    "ide_onRowClick": "AS_Segment_a7920c86c29342d4be79b477bacd38de",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none",
+            "showProgressIndicator": true
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a5211c7a2ee44393b504d8cbb6f39f33",
+    "masterType": 1,
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "frmAccount",
+    "pf": "frmAccount",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "hb8f985dcf8840a2987cc8cf3a4ce0f9",
+    "rowcounter": 9,
+    "rowfocusskin": "sbbcfbbd46c04dea9aa4c6fa585f9ed0",
+    "rowskin": "sbcd9b2eb9e74b309b68586db3150ed1",
+    "rowtemplate": "flxAccTemp",
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s266e1fa1d2342e8bc8737734ba75a88",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showprogressindicator": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetdatamap": {
+        "accNumber": "accNumber",
+        "btnViewTransaction": "btnViewTransaction",
+        "flxAccNameWithImage": "flxAccNameWithImage",
+        "flxAccSub": "flxAccSub",
+        "flxAccType": "flxAccType",
+        "flxBlnce": "flxBlnce",
+        "flxHStrip": "flxHStrip",
+        "lblAccName": "lblAccName",
+        "lblAccType": "lblAccType",
+        "lblAvailableblnc": "lblAvailableblnc",
+        "lblBlnce": "lblBlnce"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "4.34%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s08314eebf7f491b92804d4c5d1ef838",
+    "_text_": "SIGN UP",
+    "_width_": {
+        "type": "string",
+        "value": "27.10%"
+    },
+    "android": {
+        "contentAlignment": 6
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "81.78%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "92.89%"
+    },
+    "containerweight": 100,
+    "contentalignment": 6,
+    "displaytext": true,
+    "focusskin": "saf00be84db647479902b200cc2772e2",
+    "id": "btnSignUp",
+    "info": null,
+    "iphone": {
+        "contentAlignment": 6,
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "e7704aaa021c4c369daf4142bb4d4454",
+    "name": "kony.ui.Button",
+    "parent": "ZenithLogin",
+    "pf": "userwidgetmodel",
+    "showprogressindicator": false,
+    "wType": "Button",
+    "zindex": 1
+}
